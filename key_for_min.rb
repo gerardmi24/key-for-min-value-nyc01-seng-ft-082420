@@ -6,9 +6,13 @@ smallest = ""
 integer = 1000
 name_hash.each do |key, value|
 if value < integer
-  value = integer
+  integer = value
   smallest = key
 end
+smallest
+end
+if smallest == ""
+  smallest = nil
 end
 smallest
 end
